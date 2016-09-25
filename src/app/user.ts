@@ -3,4 +3,11 @@ export class User{
     age:number;
     height:number;
     weight:number;
+
+    isOld():Boolean{
+        return this.age >= 60;
+    }
+
+    
+
 }

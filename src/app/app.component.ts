@@ -17,4 +17,12 @@ export class AppComponent {
     this.user.height = 165
     this.user.weight = 66
   }
+
+  checkAge(){
+    if(this.user.isOld())
+      alert("You are quite old!")
+    else
+      alert("Your age is fine.")
+  }
+
 }
