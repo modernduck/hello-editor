@@ -1,8 +1,12 @@
+
+
 <section *ngIf="!isEditMode">
   <h1>Detail</h1>
   <div>
     <b>Name:</b>{{user.name}}
     <b>Age:</b>{{user.age}}
+    <b>weight:</b>{{user.weight}}
+    <b>height:</b>{{user.height}}
   </div>
   <button (click)="isEditMode=true">Edit</button>
 </section >
@@ -14,6 +18,9 @@
   <div>
     <input type="text" [(ngModel)]="user.name" /><br/>
     <input type="number" [(ngModel)]="user.age" /><br/>
+    <input type="weight" [(ngModel)]="user.weight" /><br/>
+    <input type="height" [(ngModel)]="user.height" /><br/>
     <button (click)="checkAge()">Check Age</button>
+    <button (click)="checkHealth()">Check Health</button>
   </div>
 </section>

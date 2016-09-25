@@ -12,7 +12,7 @@ export class User{
     isHealthy():boolean{
 
         //180/
-        return this.height/this.weight >= 1.5 && this.height/this.weight <= 3.5 
+        return this.height/this.weight >= 2 && this.height/this.weight <= 3.5 
     }
 
 
