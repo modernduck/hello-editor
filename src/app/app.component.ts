@@ -20,12 +20,13 @@ const USERS = [
 export class AppComponent {
   
   selectedUser:User;
+  users:Array<User>;
   isEditMode:Boolean = false;
 
 
   constructor(){
     this.selectedUser = USERS[0];
-    
+    this.users = USERS;
   }
 
   checkAge(){

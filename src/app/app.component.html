@@ -1,4 +1,9 @@
 <section *ngIf="!isEditMode">
+  <ul>
+      <li *ngFor="let item of users">
+        {{item.name}} <span>{{item.age}}</span> 
+      </li>
+  </ul>
   <h1>Detail</h1>
   <div>
     <b>Name:</b>{{selectedUser.name}}
