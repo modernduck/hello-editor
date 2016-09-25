@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from "./user"
 
 @Component({
   moduleId: module.id,
@@ -7,8 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.css']
 })
 export class AppComponent {
-  user = {
-    "name":"Sompop",
-    "age":29
+  user:User;
+
+  constructor(){
+    this.user = new User();
+    this.user.name = "sompop"
+    this.user.age = 29 
+    this.user.height = 165
+    this.user.weight = 66
   }
 }

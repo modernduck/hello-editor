@@ -3,8 +3,9 @@
   <b>Name:</b>{{user.name}}
   <b>Age:</b>{{user.age}}
 </div>
+<pre>{{user | json}}</pre>
 <h2>Editor</h2>
 <div>
-  <input type="text" value="{{user.name}}" /><br/>
-  <input type="number" value="{{user.age}}" /><br/>
+  <input type="text" [(ngModel)]="user.name" /><br/>
+  <input type="number" [(ngModel)]="user.age" /><br/>
 </div>
