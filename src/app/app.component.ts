@@ -9,6 +9,8 @@ import { User } from "./user"
 })
 export class AppComponent {
   user:User;
+  isEditMode:Boolean = false;
+
 
   constructor(){
     this.user = new User();
