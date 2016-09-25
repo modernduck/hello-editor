@@ -6,6 +6,7 @@
   </div>
   <button (click)="isEditMode=true">Edit</button>
 </section >
+
 <section *ngIf="isEditMode">
   <pre>{{user | json}}</pre>
   <h2>Editor</h2>

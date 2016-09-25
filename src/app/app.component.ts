@@ -8,6 +8,7 @@ import { User } from "./user"
   styleUrls: ['app.component.css']
 })
 export class AppComponent {
+  
   user:User;
   isEditMode:Boolean = false;
 
@@ -26,5 +27,12 @@ export class AppComponent {
     else
       alert("Your age is fine.")
   }
+
+  checkHealth(){
+    if(this.user.isHealthy())
+      alert("You are healthy")
+    else
+      alert("You are not healthy")
+  }  
 
 }
