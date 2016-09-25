@@ -1,7 +1,7 @@
-<section *ngIf="!isEditMode">
+<section *ngIf="!isEditMode" class="user-selector">
   <ul>
       <li *ngFor="let item of users" (click)="selectedUser=item">
-        {{item.name}} <span>{{item.age}}</span> 
+        {{item.name}} <span class="age">{{item.age}}</span> 
       </li>
   </ul>
   <h1>Detail</h1>
